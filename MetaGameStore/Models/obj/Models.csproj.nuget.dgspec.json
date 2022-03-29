@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj": {}
+    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj": {}
   },
   "projects": {
-    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj": {
+    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj",
+        "projectUniqueName": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj",
+        "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-        "outputPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\obj\\",
+        "outputPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patry\\AppData\\Roaming\\NuGet\\NuGet.Config",

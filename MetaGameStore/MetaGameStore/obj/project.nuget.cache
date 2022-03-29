@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fok++rc4YAaue/3OYP++Z9Pxqm9n+AiKeYs3QuAGJD0En1QALEIF8ioAU+3/3hBD/rpHh3YjBB1lzMX4DdSG1g==",
+  "dgSpecHash": "wJaxIlVB/VyoTXCDDMsusmcxFocIY+7JTFNEg1DkuVK1Fh2l4aV2qSaGGS7vtvDBvYbTCAPElSjwOX49UwQqZw==",
   "success": true,
-  "projectFilePath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
+  "projectFilePath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patry\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\patry\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
