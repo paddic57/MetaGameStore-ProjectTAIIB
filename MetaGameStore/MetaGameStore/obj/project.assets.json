@@ -753,19 +753,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\patry\\.nuget\\packages\\": {}
+    "C:\\Users\\mikiv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
+      "projectUniqueName": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
       "projectName": "MetaGameStore",
-      "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
-      "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-      "outputPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\MetaGameStore\\obj\\",
+      "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\MetaGameStore\\MetaGameStore.csproj",
+      "packagesPath": "C:\\Users\\mikiv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\MetaGameStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\patry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -779,14 +779,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj": {
-              "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj"
+            "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj": {
+              "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj"
             },
-            "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj": {
-              "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj"
+            "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj"
             },
-            "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Repositories\\Repositories.csproj": {
-              "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Repositories\\Repositories.csproj"
+            "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Repositories\\Repositories.csproj"
             }
           }
         }

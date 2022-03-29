@@ -10,3 +10,15 @@ A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\Me
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\IRepositories\obj\Debug\net6.0\refint\IRepositories.dll
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.pdb
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\IRepositories\obj\Debug\net6.0\ref\IRepositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\bin\Debug\net6.0\IRepositories.deps.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\bin\Debug\net6.0\IRepositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\bin\Debug\net6.0\IRepositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.csproj.AssemblyReference.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.AssemblyInfoInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.AssemblyInfo.cs
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.csproj.CoreCompileInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\refint\IRepositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\IRepositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\IRepositories\obj\Debug\net6.0\ref\IRepositories.dll

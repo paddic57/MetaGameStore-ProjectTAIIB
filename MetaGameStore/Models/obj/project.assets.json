@@ -739,19 +739,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\patry\\.nuget\\packages\\": {}
+    "C:\\Users\\mikiv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\Models.csproj",
-      "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-      "outputPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\Models\\obj\\",
+      "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\mikiv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\patry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

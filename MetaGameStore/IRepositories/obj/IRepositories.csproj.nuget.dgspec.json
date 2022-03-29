@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj": {}
+    "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj": {}
   },
   "projects": {
-    "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj": {
+    "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj",
+        "projectUniqueName": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj",
         "projectName": "IRepositories",
-        "projectPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\IRepositories.csproj",
-        "packagesPath": "C:\\Users\\patry\\.nuget\\packages\\",
-        "outputPath": "A:\\1STUDIA\\rok 3 sem 6\\Tworzenie_aplikacji_internetowych_bazodanowych\\projekt\\MetaGameStore\\IRepositories\\obj\\",
+        "projectPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\IRepositories.csproj",
+        "packagesPath": "C:\\Users\\mikiv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikiv\\OneDrive\\Pulpit\\MetaGameStore-ProjectTAIIB\\MetaGameStore\\IRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\patry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -10,3 +10,15 @@ A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\Me
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\Repositories\obj\Debug\net6.0\refint\Repositories.dll
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.pdb
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\bin\Debug\net6.0\Repositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\bin\Debug\net6.0\Repositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\Repositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\Repositories\obj\Debug\net6.0\ref\Repositories.dll

@@ -39,3 +39,44 @@ A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\Me
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\MetaGameStore\obj\Debug\net6.0\ref\MetaGameStore.dll
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Models.dll
 A:\1STUDIA\rok 3 sem 6\Tworzenie_aplikacji_internetowych_bazodanowych\projekt\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Models.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\appsettings.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.staticwebassets.runtime.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.exe
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.deps.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.runtimeconfig.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\MetaGameStore.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Humanizer.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Npgsql.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\IRepositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Models.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Repositories.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\IRepositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Models.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\bin\Debug\net6.0\Repositories.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.csproj.AssemblyReference.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.AssemblyInfoInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.AssemblyInfo.cs
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.csproj.CoreCompileInputs.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.RazorAssemblyInfo.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.RazorAssemblyInfo.cs
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\scopedcss\bundle\MetaGameStore.styles.css
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\scopedcss\projectbundle\MetaGameStore.bundle.scp.css
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.csproj.CopyComplete
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\refint\MetaGameStore.dll
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.pdb
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\MetaGameStore.genruntimeconfig.cache
+C:\Users\mikiv\OneDrive\Pulpit\MetaGameStore-ProjectTAIIB\MetaGameStore\MetaGameStore\obj\Debug\net6.0\ref\MetaGameStore.dll
