@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +15,15 @@ namespace Models.Models
 
         public double price { get; set; }
         public DateTime date { get; set; }
+        [Required, MaxLength(50)]
         public string shippingName { get; set; }
+        [Required, MaxLength(50)]
         public string shippingCity { get; set; }
+        [Required, MaxLength(50)]
         public string shippingAddress { get; set; }
+        [Required, MaxLength(6)]
         public string shippingPostalCode { get; set; }
+        [Required, MaxLength(50)]
         public string shippingCountry { get; set; }
     }
 }
