@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Models;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Models.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20220402085653_first")]
+    partial class first
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,10 +27,16 @@ namespace Models.Migrations
             modelBuilder.Entity("Models.Models.Order", b =>
                 {
                     b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("id"));
 
                     b.Property<DateTime>("date")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("idPayment")
+                        .HasColumnType("integer");
 
                     b.Property<int>("idUser")
                         .HasColumnType("integer");
@@ -62,6 +70,9 @@ namespace Models.Migrations
                         .HasColumnType("character varying(6)");
 
                     b.HasKey("id");
+
+                    b.HasIndex("idPayment")
+                        .IsUnique();
 
                     b.HasIndex("idUser");
 
@@ -129,7 +140,10 @@ namespace Models.Migrations
             modelBuilder.Entity("Models.Models.Product", b =>
                 {
                     b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("id"));
 
                     b.Property<int>("count")
                         .HasColumnType("integer");
@@ -176,6 +190,9 @@ namespace Models.Migrations
                     b.Property<int>("game_type")
                         .HasColumnType("integer");
 
+                    b.Property<int>("id_product")
+                        .HasColumnType("integer");
+
                     b.Property<string>("pegi")
                         .IsRequired()
                         .HasColumnType("text");
@@ -187,6 +204,9 @@ namespace Models.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("id_product")
+                        .IsUnique();
 
                     b.ToTable("ProductsGames");
                 });
@@ -250,7 +270,7 @@ namespace Models.Migrations
                 {
                     b.HasOne("Models.Models.Payment", "Payment")
                         .WithOne("order")
-                        .HasForeignKey("Models.Models.Order", "id")
+                        .HasForeignKey("Models.Models.Order", "idPayment")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -284,15 +304,15 @@ namespace Models.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Models.Models.Product", b =>
+            modelBuilder.Entity("Models.Models.ProductGame", b =>
                 {
-                    b.HasOne("Models.Models.ProductGame", "ProductGame")
-                        .WithOne("Product")
-                        .HasForeignKey("Models.Models.Product", "id")
+                    b.HasOne("Models.Models.Product", "Product")
+                        .WithOne("ProductGame")
+                        .HasForeignKey("Models.Models.ProductGame", "id_product")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ProductGame");
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Models.Models.Payment", b =>
@@ -305,11 +325,8 @@ namespace Models.Migrations
                 {
                     b.Navigation("OrderDetails")
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("Models.Models.ProductGame", b =>
-                {
-                    b.Navigation("Product")
+                    b.Navigation("ProductGame")
                         .IsRequired();
                 });
 
