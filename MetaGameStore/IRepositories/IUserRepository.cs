@@ -10,7 +10,7 @@ namespace IRepositories
     public interface IUserRepository
     {
         //authorization
-        public bool authorization(string username, string password);
+        public int authorization(string username, string password);
         //delete
         public void delete(int userId);
         //getById
@@ -18,7 +18,7 @@ namespace IRepositories
         //post
         public void post(User user);
         //put
-        public void put(User user)
+        public void put(User user);
 
         //?get-all?
         
