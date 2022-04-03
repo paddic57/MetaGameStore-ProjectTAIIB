@@ -12,5 +12,6 @@ namespace IBusinessLayer
     {
         public bool post(Payment payment);
         public bool put(int paymentId, PaymentType paymentType);
+        public Payment getPaymentById(int paymentId);
     }
 }

@@ -14,5 +14,6 @@ namespace IBusinessLayer
         public User getByUserId(int userId);
         public bool post(User user);
         public bool put(User user);
+        public User getUserByUsername(string username);
     }
 }

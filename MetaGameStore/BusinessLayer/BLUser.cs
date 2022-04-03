@@ -26,31 +26,48 @@ namespace BusinessLayer
             {
                 throw new ArgumentException("Invalid password");
             }
-            if (unitOfWork.user.getUserByUsername(username) != null)
-            {
-                throw new ArgumentException("There is no user");
-            }
-
+            return unitOfWork.user.authorization(username, password);
         }
 
         public bool delete(int userId)
         {
-            throw new NotImplementedException();
+            if(userId < 0)
+                throw new ArgumentException("Invalid user id");
+            unitOfWork.user.delete(userId);
+            unitOfWork.Save();
+            return true;
         }
 
         public User getByUserId(int userId)
         {
-            throw new NotImplementedException();
+            if (userId < 0)
+                throw new ArgumentException("Invalid user id");
+            return unitOfWork.user.getByUserId(userId);
+        }
+
+        public User getUserByUsername(string username)
+        {
+            if (username == null)
+                throw new ArgumentException("There is no user");
+            return unitOfWork.user.getUserByUsername(username);
         }
 
         public bool post(User user)
         {
-            throw new NotImplementedException();
+            if (user != null)
+                throw new ArgumentException("Invalid user");
+            unitOfWork.user.post(user);
+            unitOfWork.Save();
+            return true;
         }
 
         public bool put(User user)
         {
-            throw new NotImplementedException();
+            if (user != null)
+                throw new ArgumentException("Invalid user");
+            unitOfWork.user.put(user);
+            unitOfWork.Save();
+            return true;
         }
     }
 }

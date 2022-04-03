@@ -8,10 +8,10 @@ namespace Models.Enums
 {
     public enum PlatformType
     {
-        PC,
-        PS4,
-        XBOX,
-        Switch,
-        PS5
+        PC = 0,
+        PS4 = 1,
+        XBOX = 2,
+        Switch = 3,
+        PS5 = 4
     }
 }

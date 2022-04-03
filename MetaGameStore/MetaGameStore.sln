@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaGameStore", "MetaGameStore\MetaGameStore.csproj", "{31AA6990-22FE-42BD-BD98-1E22BE68E582}"
+	ProjectSection(ProjectDependencies) = postProject
+		{51A1737B-09AE-4888-9AAC-E5834170A687} = {51A1737B-09AE-4888-9AAC-E5834170A687}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepositories", "IRepositories\IRepositories.csproj", "{E3698B62-9726-49A9-B3B4-FA7DC6685EC9}"
 EndProject
@@ -13,9 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{51A1737B-09AE-4888-9AAC-E5834170A687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBusinessLayer", "IBusinessLayer\IBusinessLayer.csproj", "{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBusinessLayer", "IBusinessLayer\IBusinessLayer.csproj", "{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B81221CC-7F21-44BD-9C3A-8DB82079400A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B81221CC-7F21-44BD-9C3A-8DB82079400A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,12 +8,12 @@ namespace Models.Enums
 {
     public enum GameType
     {
-        RPG,
-        Akcji,
-        FPS,
-        RTS,
-        Symulator,
-        Platformówka
+        RPG = 0,
+        Akcji = 1,
+        FPS = 2,
+        RTS = 3,
+        Symulator = 4,
+        Platformówka = 5
 
     }
 }

@@ -8,9 +8,9 @@ namespace Models.Enums
 {
     public enum PaymentType
     {
-        PayPal,
-        Card,
-        Blik,
-        Transfer
+        PayPal = 0,
+        Card = 1,
+        Blik = 2,
+        Transfer = 3
     }
 }

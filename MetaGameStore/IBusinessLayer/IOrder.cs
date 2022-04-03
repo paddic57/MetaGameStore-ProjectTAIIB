@@ -10,7 +10,7 @@ namespace IBusinessLayer
     public interface IOrder
     {
         public bool post(Order order);
-        public IEnumerable<Order> getByUserID();
+        public IEnumerable<Order> getByUserID(int userId);
 
     }
 }

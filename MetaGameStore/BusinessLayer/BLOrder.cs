@@ -16,14 +16,20 @@ namespace BusinessLayer
         {
             this.unitOfWork = unitOfWork;
         }
-        public IEnumerable<Order> getByUserID()
+
+        public IEnumerable<Order> getByUserID(int userId)
         {
-            return unitOfWork.order.getByUserId();
+            return unitOfWork.order.getByUserID(userId);
         }
 
         public bool post(Order order)
         {
-            throw new NotImplementedException();
+            if(order != null)
+                throw new ArgumentException("Invalid order");
+
+            unitOfWork.order.post(order);
+            unitOfWork.Save();
+            return true;
         }
     }
 }

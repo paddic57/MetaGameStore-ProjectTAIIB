@@ -13,5 +13,6 @@ namespace IBusinessLayer
         public bool post(OrderDetails orderDetails);
         public bool put(int orderDetailsId, int count, int discount);
         public bool delete(int orderDetailsId);
+        public OrderDetails getByOrderDetailsId(int orderDetailsId);
     }
 }

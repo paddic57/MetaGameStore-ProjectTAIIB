@@ -18,7 +18,9 @@ namespace BusinessLayer
         }
         public ProductGame getByProductId(int productId)
         {
-            throw new NotImplementedException();
+            if (productId < 0)
+                throw new ArgumentException("Invalid product id");
+            return unitOfWork.productGame.getByProductId(productId);
         }
     }
 }

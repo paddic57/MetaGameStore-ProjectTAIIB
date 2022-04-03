@@ -18,22 +18,32 @@ namespace BusinessLayer
         }
         public IEnumerable<Product> getAll()
         {
-            throw new NotImplementedException();
+            return unitOfWork.product.getAll();
         }
 
         public Product getByProductId(int productId)
         {
-            throw new NotImplementedException();
+            if (productId < 0)
+                throw new ArgumentException("Invalid product id");
+            return unitOfWork.product.getByProductId(productId);
         }
 
         public bool post(Product product)
         {
-            throw new NotImplementedException();
+            if (product != null)
+                throw new ArgumentException("Invalid product");
+            unitOfWork.product.post(product);
+            unitOfWork.Save();
+            return true;
         }
 
         public bool put(Product product)
         {
-            throw new NotImplementedException();
+            if (product != null)
+                throw new ArgumentException("Invalid product");
+            unitOfWork.product.put(product);
+            unitOfWork.Save();
+            return true;
         }
     }
 }
