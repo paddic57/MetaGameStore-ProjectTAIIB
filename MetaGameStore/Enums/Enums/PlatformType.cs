@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models.Enums
 {
-    public class payment_type
+    public enum PlatformType
     {
-        enum PaymentType
-        {
-            PayPal,
-            Card,
-            Blik,
-            Transfer
-        }
+        PC,
+        PS4,
+        XBOX,
+        Switch,
+        PS5
     }
 }

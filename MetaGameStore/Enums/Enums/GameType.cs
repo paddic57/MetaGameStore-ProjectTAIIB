@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Models.Enums
 {
-    public class user_type
+    public enum GameType
     {
-        enum UserType
-        {
-            Guest,
-            Costumer,
-            Employee,
-            Menager
-        }
+        RPG,
+        Akcji,
+        FPS,
+        RTS,
+        Symulator,
+        Platformówka
 
     }
 }
