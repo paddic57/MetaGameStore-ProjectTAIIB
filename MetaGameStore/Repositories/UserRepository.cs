@@ -1,4 +1,5 @@
 ﻿using IRepositories;
+using Models;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -10,22 +11,23 @@ namespace Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly UnitOfWork unitOfWork;
+        private readonly MyContext context;
 
-        public UserRepository(UnitOfWork unitOfWork)
+        public UserRepository(MyContext context)
         {
-            this.unitOfWork = unitOfWork;
+            this.context = context;
         }
 
 
         public int authorization(string username, string password)
         {
-            return this.unitOfWork.userRepository.authorization(username, password);
+            return -1;
+            //return this.unitOfWork.userRepository.authorization(username, password);
         }
 
         public void delete(int userId)
         {
-            this.unitOfWork.userRepository.delete(userId);
+            //this.unitOfWork.userRepository.delete(userId);
         }
 
         public User getByUserId(int userId)

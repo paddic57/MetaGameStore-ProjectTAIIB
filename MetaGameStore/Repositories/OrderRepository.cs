@@ -10,6 +10,13 @@ namespace Repositories
 {
     public class OrderRepository : IOrderRepository
     {
+        private readonly UnitOfWork unitOfWork;
+
+        public OrderRepository(UnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+
         public IEnumerable<Order> getByUserID()
         {
             throw new NotImplementedException();

@@ -1,4 +1,5 @@
 ﻿using IRepositories;
+using Models;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace Repositories
 {
     public class OrderDetailsRepository : IOrderDetailsRepository
     {
+        private readonly MyContext context;
+
+        public OrderDetailsRepository(MyContext context)
+        {
+            this.context = context;
+        }
+
         public void delete(int orderDetailsId)
         {
             throw new NotImplementedException();

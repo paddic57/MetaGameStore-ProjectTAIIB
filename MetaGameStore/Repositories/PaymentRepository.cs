@@ -11,6 +11,13 @@ namespace Repositories
 {
     public class PaymentRepository : IPaymentRepository
     {
+        private readonly UnitOfWork unitOfWork;
+
+        public PaymentRepository(UnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+
         public void post(Payment payment)
         {
             throw new NotImplementedException();

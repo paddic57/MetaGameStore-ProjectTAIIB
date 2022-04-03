@@ -10,6 +10,12 @@ namespace Repositories
 {
     public class ProductRepository : IProductRepository
     {
+        private readonly UnitOfWork unitOfWork;
+
+        public ProductRepository(UnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
         public IEnumerable<Product> getAll()
         {
             throw new NotImplementedException();

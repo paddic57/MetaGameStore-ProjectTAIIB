@@ -8,13 +8,14 @@ namespace IRepositories
 {
     public interface IUnitOfWork
     {
-        public IOrderDetailsRepository orderDetailsRepository { get; }
-        public IOrderRepository orderRepository { get;}
-        public IPaymentRepository paymentRepository { get; }
-        public IProductGameRepository productGameRepository { get;}
-        public IProductRepository productRepository { get;}
-        public IUserRepository userRepository { get;}
+        public IOrderDetailsRepository orderDetails { get; }
+        public IOrderRepository order{ get;}
+        public IPaymentRepository payment{ get; }
+        public IProductGameRepository productGame { get;}
+        public IProductRepository product { get;}
+        public IUserRepository user{ get;}
 
-        void Save();
+        public Task<int> SaveAsync();
+        public int Save();
     }
 }
