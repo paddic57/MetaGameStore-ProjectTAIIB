@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Models.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20220402085653_first")]
-    partial class first
+    [Migration("20220403092815_update1")]
+    partial class update1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,13 +32,13 @@ namespace Models.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("id"));
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("date")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("idPayment")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("idUser")
                         .HasColumnType("integer");
 
                     b.Property<double>("price")
@@ -71,10 +71,10 @@ namespace Models.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("UserId");
+
                     b.HasIndex("idPayment")
                         .IsUnique();
-
-                    b.HasIndex("idUser");
 
                     b.ToTable("Orders");
                 });
@@ -106,8 +106,7 @@ namespace Models.Migrations
 
                     b.HasIndex("idOrder");
 
-                    b.HasIndex("idProduct")
-                        .IsUnique();
+                    b.HasIndex("idProduct");
 
                     b.ToTable("OrderDetails");
                 });
@@ -140,10 +139,7 @@ namespace Models.Migrations
             modelBuilder.Entity("Models.Models.Product", b =>
                 {
                     b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("id"));
 
                     b.Property<int>("count")
                         .HasColumnType("integer");
@@ -190,9 +186,6 @@ namespace Models.Migrations
                     b.Property<int>("game_type")
                         .HasColumnType("integer");
 
-                    b.Property<int>("id_product")
-                        .HasColumnType("integer");
-
                     b.Property<string>("pegi")
                         .IsRequired()
                         .HasColumnType("text");
@@ -204,9 +197,6 @@ namespace Models.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("id_product")
-                        .IsUnique();
 
                     b.ToTable("ProductsGames");
                 });
@@ -268,15 +258,15 @@ namespace Models.Migrations
 
             modelBuilder.Entity("Models.Models.Order", b =>
                 {
-                    b.HasOne("Models.Models.Payment", "Payment")
-                        .WithOne("order")
-                        .HasForeignKey("Models.Models.Order", "idPayment")
+                    b.HasOne("Models.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Models.Models.User", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("idUser")
+                    b.HasOne("Models.Models.Payment", "Payment")
+                        .WithOne("order")
+                        .HasForeignKey("Models.Models.Order", "idPayment")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -294,8 +284,8 @@ namespace Models.Migrations
                         .IsRequired();
 
                     b.HasOne("Models.Models.Product", "Product")
-                        .WithOne("OrderDetails")
-                        .HasForeignKey("Models.Models.OrderDetails", "idProduct")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("idProduct")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -304,15 +294,15 @@ namespace Models.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Models.Models.ProductGame", b =>
+            modelBuilder.Entity("Models.Models.Product", b =>
                 {
-                    b.HasOne("Models.Models.Product", "Product")
-                        .WithOne("ProductGame")
-                        .HasForeignKey("Models.Models.ProductGame", "id_product")
+                    b.HasOne("Models.Models.ProductGame", "ProductGame")
+                        .WithOne("Product")
+                        .HasForeignKey("Models.Models.Product", "id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
+                    b.Navigation("ProductGame");
                 });
 
             modelBuilder.Entity("Models.Models.Payment", b =>
@@ -323,10 +313,12 @@ namespace Models.Migrations
 
             modelBuilder.Entity("Models.Models.Product", b =>
                 {
-                    b.Navigation("OrderDetails")
-                        .IsRequired();
+                    b.Navigation("OrderDetails");
+                });
 
-                    b.Navigation("ProductGame")
+            modelBuilder.Entity("Models.Models.ProductGame", b =>
+                {
+                    b.Navigation("Product")
                         .IsRequired();
                 });
 

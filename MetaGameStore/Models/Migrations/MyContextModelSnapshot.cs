@@ -25,12 +25,18 @@ namespace Models.Migrations
             modelBuilder.Entity("Models.Models.Order", b =>
                 {
                     b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("id"));
+
+                    b.Property<int>("UserId")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("date")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("idUser")
+                    b.Property<int>("idPayment")
                         .HasColumnType("integer");
 
                     b.Property<double>("price")
@@ -63,7 +69,10 @@ namespace Models.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("idUser");
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("idPayment")
+                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -95,8 +104,7 @@ namespace Models.Migrations
 
                     b.HasIndex("idOrder");
 
-                    b.HasIndex("idProduct")
-                        .IsUnique();
+                    b.HasIndex("idProduct");
 
                     b.ToTable("OrderDetails");
                 });
@@ -248,15 +256,15 @@ namespace Models.Migrations
 
             modelBuilder.Entity("Models.Models.Order", b =>
                 {
-                    b.HasOne("Models.Models.Payment", "Payment")
-                        .WithOne("order")
-                        .HasForeignKey("Models.Models.Order", "id")
+                    b.HasOne("Models.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Models.Models.User", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("idUser")
+                    b.HasOne("Models.Models.Payment", "Payment")
+                        .WithOne("order")
+                        .HasForeignKey("Models.Models.Order", "idPayment")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -274,8 +282,8 @@ namespace Models.Migrations
                         .IsRequired();
 
                     b.HasOne("Models.Models.Product", "Product")
-                        .WithOne("OrderDetails")
-                        .HasForeignKey("Models.Models.OrderDetails", "idProduct")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("idProduct")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -303,8 +311,7 @@ namespace Models.Migrations
 
             modelBuilder.Entity("Models.Models.Product", b =>
                 {
-                    b.Navigation("OrderDetails")
-                        .IsRequired();
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("Models.Models.ProductGame", b =>

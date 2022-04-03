@@ -11,7 +11,6 @@ namespace Models.Models
     public class Order
     {
         [Key]
-        [ForeignKey("Payment")]
         public int id { get; set; }
         
         
@@ -29,12 +28,12 @@ namespace Models.Models
         [Required, MaxLength(50)]
         public string shippingCountry { get; set; }
 
-        [ForeignKey("User")]
-        public int idUser { get; set; }
         public User User { get; set; }
 
         ICollection<OrderDetails> OrderDetails { get; set; }
 
+        [ForeignKey("Payment")]
+        public int idPayment { get; set; }
         public Payment Payment { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace Models.Models
         public int count { get; set; }
         public Byte[] photo{ get; set; }
 
-        public OrderDetails OrderDetails { get; set; }
+        public ICollection<OrderDetails> OrderDetails { get; set; }
 
         public ProductGame ProductGame { get; set; }
     }
