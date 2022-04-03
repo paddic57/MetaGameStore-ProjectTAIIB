@@ -12,7 +12,7 @@ namespace IRepositories
         //post
         public void post(Order order);
         //getByUserID
-        public IEnumerable<Order> getByUserID();
+        public IEnumerable<Order> getByUserID(int userId);
         //?get-all?
     }
 }

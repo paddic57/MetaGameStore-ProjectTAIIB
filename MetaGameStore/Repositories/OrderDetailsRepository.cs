@@ -17,25 +17,39 @@ namespace Repositories
         {
             this.context = context;
         }
-
-        public void delete(int orderDetailsId)
+        public OrderDetails getByOrderDetailsId(int orderDetailsId)
         {
-            throw new NotImplementedException();
+            return this.context.OrderDetails.Where(x => x.Id == orderDetailsId).Single();
+        }
+        public bool delete(int orderDetailsId)
+        {
+            OrderDetails od = getByOrderDetailsId(orderDetailsId);
+            if (od != null)
+            {
+                this.context.Remove(od);
+                return true;
+            }
+            return false;
         }
 
         public IEnumerable<OrderDetails> getByIdOrder(int orderId)
         {
-            throw new NotImplementedException();
+            return this.context.OrderDetails.Where(x => orderId == x.Order.id);
         }
 
         public void post(OrderDetails orderDetails)
         {
-            throw new NotImplementedException();
+            this.context.Add(orderDetails);
         }
 
         public void put(int orderDetailsId, int count, int discount)
         {
-            throw new NotImplementedException();
+            OrderDetails od = getByOrderDetailsId(orderDetailsId);
+            if (od != null)
+            {
+                od.productCount = count;
+                od.productDiscount = discount;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using IRepositories;
+using Models;
 using Models.Enums;
 using Models.Models;
 using System;
@@ -11,21 +12,30 @@ namespace Repositories
 {
     public class PaymentRepository : IPaymentRepository
     {
-        private readonly UnitOfWork unitOfWork;
+        private readonly MyContext context;
 
-        public PaymentRepository(UnitOfWork unitOfWork)
+        public PaymentRepository(MyContext context)
         {
-            this.unitOfWork = unitOfWork;
+            this.context = context;
         }
 
         public void post(Payment payment)
         {
-            throw new NotImplementedException();
+            this.context.Add(payment);
         }
 
         public void put(int paymentId, PaymentType paymentType)
         {
-            throw new NotImplementedException();
+            Payment p = getPaymentById(paymentId);
+            if(p != null)
+            {
+                p.paymentType = (int)paymentType;
+            }
         }
+        public Payment getPaymentById(int paymentId)
+        {
+            return this.context.Payments.Where(x => x.id == paymentId).Single();
+        }
+
     }
 }

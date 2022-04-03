@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositorie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{B19B097A-1431-400C-B005-3B11867ABFC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{51A1737B-09AE-4888-9AAC-E5834170A687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{51A1737B-09AE-4888-9AAC-E5834170A687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBusinessLayer", "IBusinessLayer\IBusinessLayer.csproj", "{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B81221CC-7F21-44BD-9C3A-8DB82079400A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{51A1737B-09AE-4888-9AAC-E5834170A687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51A1737B-09AE-4888-9AAC-E5834170A687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51A1737B-09AE-4888-9AAC-E5834170A687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6727B28A-7B01-4DF6-BAFA-FD9A7DD14471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81221CC-7F21-44BD-9C3A-8DB82079400A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81221CC-7F21-44BD-9C3A-8DB82079400A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81221CC-7F21-44BD-9C3A-8DB82079400A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81221CC-7F21-44BD-9C3A-8DB82079400A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

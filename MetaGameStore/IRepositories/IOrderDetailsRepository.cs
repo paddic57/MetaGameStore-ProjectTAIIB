@@ -16,6 +16,8 @@ namespace IRepositories
         //put
         public void put(int orderDetailsId, int count, int discount);
         //delete
-        public void delete(int orderDetailsId);
+        public bool delete(int orderDetailsId);
+
+        public OrderDetails getByOrderDetailsId(int orderDetailsId);
     }
 }

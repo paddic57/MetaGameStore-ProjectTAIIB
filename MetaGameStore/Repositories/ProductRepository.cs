@@ -1,4 +1,5 @@
 ﻿using IRepositories;
+using Models;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -10,30 +11,49 @@ namespace Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly UnitOfWork unitOfWork;
+        private readonly MyContext context;
 
-        public ProductRepository(UnitOfWork unitOfWork)
+        public ProductRepository(MyContext context)
         {
-            this.unitOfWork = unitOfWork;
+            this.context = context;
         }
+
         public IEnumerable<Product> getAll()
         {
-            throw new NotImplementedException();
+            return this.context.Products;
         }
 
         public Product getByProductId(int productId)
         {
-            throw new NotImplementedException();
+            return this.context.Products.Where(x => x.id == productId).Single();
         }
 
         public void post(Product product)
         {
-            throw new NotImplementedException();
+            this.context.Products.Add(product);
         }
 
         public void put(Product product)
         {
-            throw new NotImplementedException();
+            Product p = getByProductId(product.id);
+            if (p != null)
+            {
+                p.price = product.price;
+                p.photo = product.photo;
+                p.producer = product.producer;
+                p.count = product.count;
+                p.name = product.name;
+                p.desription = product.desription;
+            }
+        }
+        public bool delete(Product product)
+        {
+            if (product != null)
+            {
+                this.context.Products.Remove(product);
+                return true;
+            }
+            return false;
         }
     }
 }

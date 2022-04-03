@@ -14,6 +14,6 @@ namespace IRepositories
         public void post(Payment payment);
         //put-status
         public void put(int paymentId, PaymentType paymentType);
-        //getByOrderId
+        public Payment getPaymentById(int paymentId);
     }
 }

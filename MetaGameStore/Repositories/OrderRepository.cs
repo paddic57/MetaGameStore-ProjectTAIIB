@@ -1,4 +1,5 @@
 ﻿using IRepositories;
+using Models;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -10,21 +11,21 @@ namespace Repositories
 {
     public class OrderRepository : IOrderRepository
     {
-        private readonly UnitOfWork unitOfWork;
+        private readonly MyContext context;
 
-        public OrderRepository(UnitOfWork unitOfWork)
+        public OrderRepository(MyContext context)
         {
-            this.unitOfWork = unitOfWork;
+            this.context = context;
         }
 
-        public IEnumerable<Order> getByUserID()
+        public IEnumerable<Order> getByUserID(int userId)
         {
-            throw new NotImplementedException();
+            return this.context.Orders.Where(x => x.User.Id == userId);
         }
 
         public void post(Order order)
         {
-            throw new NotImplementedException();
+            this.context.Orders.Add(order);
         }
     }
 }

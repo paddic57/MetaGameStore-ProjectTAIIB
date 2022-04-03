@@ -18,5 +18,6 @@ namespace IRepositories
         //put
         public void put(Product product);
         //delete
+        public bool delete(Product product);
     }
 }

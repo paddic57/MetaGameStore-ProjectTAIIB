@@ -1,24 +1,21 @@
-﻿using IRepositories;
-using Models;
+﻿using IBusinessLayer;
 using Models.Models;
+using Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repositories
+namespace BusinessLayer
 {
-    public class ProductGameRepository : IProductGameRepository
+    public class BLProductGame : IProductGame
     {
-        private readonly MyContext context;
-
-        public ProductGameRepository(MyContext context)
+        private readonly UnitOfWork unitOfWork;
+        public BLProductGame(UnitOfWork unitOfWork)
         {
-            this.context = context;
+            this.unitOfWork = unitOfWork;
         }
-
-
         public ProductGame getByProductId(int productId)
         {
             throw new NotImplementedException();

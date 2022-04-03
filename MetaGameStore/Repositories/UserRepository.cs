@@ -19,30 +19,48 @@ namespace Repositories
         }
 
 
-        public int authorization(string username, string password)
+        public bool authorization(string username, string password)
         {
-            return -1;
-            //return this.unitOfWork.userRepository.authorization(username, password);
+            return this.context.Users.Where(x => (x.username == username) && (x.password == password)).Any();
         }
 
-        public void delete(int userId)
+        public bool delete(int userId)
         {
-            //this.unitOfWork.userRepository.delete(userId);
+            User user = getByUserId(userId);
+            if(user != null)
+            {
+                this.context.Users.Remove(user);
+                return true;
+            }
+            return false;
         }
 
         public User getByUserId(int userId)
         {
-            throw new NotImplementedException();
+            return this.context.Users.Where(x => x.Id == userId).Single();
+        }
+
+        public User getUserByUsername(string username)
+        {
+            return this.context.Users.Where(x => username.Equals(username)).Single();
         }
 
         public void post(User user)
         {
-            throw new NotImplementedException();
+            this.context.Users.Add(user);
         }
 
         public void put(User user)
         {
-            throw new NotImplementedException();
+            User u = getByUserId(user.Id);
+            if(u != null)
+            {
+                u.address = user.address;
+                u.country = user.country;
+                u.city = user.city;
+                u.phone_number = user.phone_number;
+                u.postal_code = user.postal_code;
+            }
         }
     }
 }
