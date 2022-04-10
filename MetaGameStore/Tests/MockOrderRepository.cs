@@ -11,15 +11,26 @@ namespace MockRepository
 {
     public class MockOrderRepository: Mock<IOrderRepository>
     {
-        public MockOrderRepository mockPost()
+        public MockOrderRepository mockAdd()
         {
-            Setup(x => x.post(It.IsAny<Order>()));
+            Setup(x => x.add(It.IsAny<Order>()));
             return this;
         }
         public MockOrderRepository mockGetByUserID(IEnumerable<Order> result)
         {
             Setup(x => x.getByUserID(It.IsAny<int>()))
                 .Returns(result);
+            return this;
+        }
+
+        public MockOrderRepository verifyAdd(Times times)
+        {
+            Verify(x => x.add(It.IsAny<Order>()), times);
+            return this;
+        }
+        public MockOrderRepository verifyGetUserId(Times times)
+        {
+            Verify(x => x.getByUserID(It.IsAny<int>()), times);
             return this;
         }
     }

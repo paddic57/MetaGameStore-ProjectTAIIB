@@ -9,7 +9,7 @@ namespace IRepositories
 {
     public interface IOrderRepository
     {
-        public void post(Order order);
+        public void add(Order order);
         public IEnumerable<Order> getByUserID(int userId);
     }
 }

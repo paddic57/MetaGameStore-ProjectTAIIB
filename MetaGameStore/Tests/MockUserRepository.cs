@@ -23,14 +23,14 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-        public MockUserRepository mockPost()
+        public MockUserRepository mockAdd()
         {
-            Setup(x => x.post(It.IsAny<User>()));
+            Setup(x => x.add(It.IsAny<User>()));
             return this;
         }
-        public MockUserRepository mockPut()
+        public MockUserRepository mockUpdate()
         {
-            Setup(x => x.put(It.IsAny<User>()));
+            Setup(x => x.update(It.IsAny<User>()));
             return this;
         }
         public MockUserRepository mockGetUserByUsername(User result)
@@ -39,5 +39,32 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
+
+        public MockUserRepository verifyDelete(Times times)
+        {
+            Verify(x => x.delete(It.IsAny<int>()), times);
+            return this;
+        }
+        public MockUserRepository verifyUpdate(Times times)
+        {
+            Verify(x => x.update(It.IsAny<User>()), times);
+            return this;
+        }
+        public MockUserRepository verifyGetUserById(Times times)
+        {
+            Verify(x => x.getByUserId(It.IsAny<int>()), times);
+            return this;
+        }
+        public MockUserRepository verifyGetUserByUsername(Times times)
+        {
+            Verify(x => x.getUserByUsername(It.IsAny<string>()), times);
+            return this;
+        }
+        public MockUserRepository verifyAdd(Times times)
+        {
+            Verify(x => x.add(It.IsAny<User>()), times);
+            return this;
+        }
+
     }
 }

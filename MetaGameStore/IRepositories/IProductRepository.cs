@@ -9,15 +9,10 @@ namespace IRepositories
 {
     public interface IProductRepository
     {
-        //get-all
         public IEnumerable<Product> getAll();
-        //getByProductId
         public Product getByProductId(int productId);
-        //post
-        public void post(Product product);
-        //put
-        public void put(Product product);
-        //delete
+        public void add(Product product);
+        public void update(Product product);
         public bool delete(Product product);
     }
 }

@@ -42,7 +42,7 @@ namespace BusinessLayer
             {
                 throw new ArgumentException("Invalid order details");
             }
-            unitOfWork.orderDetails.post(orderDetails);
+            unitOfWork.orderDetails.add(orderDetails);
             unitOfWork.Save();
             return true;
         }
@@ -55,7 +55,7 @@ namespace BusinessLayer
                 throw new ArgumentException("Invalid count");
             if (discount < 0)
                 throw new ArgumentException("Invalid discount");
-            unitOfWork.orderDetails.put(orderDetailsId, count, discount);
+            unitOfWork.orderDetails.update(orderDetailsId, count, discount);
             unitOfWork.Save();
             return true;
         }

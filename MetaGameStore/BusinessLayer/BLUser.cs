@@ -56,7 +56,7 @@ namespace BusinessLayer
         {
             if (user != null)
                 throw new ArgumentException("Invalid user");
-            unitOfWork.user.post(user);
+            unitOfWork.user.add(user);
             unitOfWork.Save();
             return true;
         }
@@ -65,7 +65,7 @@ namespace BusinessLayer
         {
             if (user != null)
                 throw new ArgumentException("Invalid user");
-            unitOfWork.user.put(user);
+            unitOfWork.user.update(user);
             unitOfWork.Save();
             return true;
         }

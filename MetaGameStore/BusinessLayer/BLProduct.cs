@@ -32,7 +32,7 @@ namespace BusinessLayer
         {
             if (product != null)
                 throw new ArgumentException("Invalid product");
-            unitOfWork.product.post(product);
+            unitOfWork.product.add(product);
             unitOfWork.Save();
             return true;
         }
@@ -41,7 +41,7 @@ namespace BusinessLayer
         {
             if (product != null)
                 throw new ArgumentException("Invalid product");
-            unitOfWork.product.put(product);
+            unitOfWork.product.update(product);
             unitOfWork.Save();
             return true;
         }

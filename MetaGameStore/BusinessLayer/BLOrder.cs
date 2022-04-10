@@ -27,7 +27,7 @@ namespace BusinessLayer
             if(order != null)
                 throw new ArgumentException("Invalid order");
 
-            unitOfWork.order.post(order);
+            unitOfWork.order.add(order);
             unitOfWork.Save();
             return true;
         }

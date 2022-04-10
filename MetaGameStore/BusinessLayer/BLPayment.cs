@@ -31,7 +31,7 @@ namespace BusinessLayer
             if (payment != null)
                 throw new ArgumentException("Invalid payment");
 
-            unitOfWork.payment.post(payment);
+            unitOfWork.payment.add(payment);
             unitOfWork.Save();
             return true;
         }
@@ -43,7 +43,7 @@ namespace BusinessLayer
             if ((int)paymentType >= 0 || (int)paymentType < 4)
                 throw new ArgumentException("Invalid payment type");
 
-            unitOfWork.payment.put(paymentId, paymentType);
+            unitOfWork.payment.update(paymentId, paymentType);
             unitOfWork.Save();
             return true;
         }

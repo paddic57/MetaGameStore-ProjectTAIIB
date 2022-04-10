@@ -27,12 +27,12 @@ namespace Repositories
             return this.context.Products.Where(x => x.id == productId).Single();
         }
 
-        public void post(Product product)
+        public void add(Product product)
         {
             this.context.Products.Add(product);
         }
 
-        public void put(Product product)
+        public void update(Product product)
         {
             Product p = getByProductId(product.id);
             if (p != null)

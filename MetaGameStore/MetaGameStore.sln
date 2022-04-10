@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBusinessLayer", "IBusiness
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B81221CC-7F21-44BD-9C3A-8DB82079400A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{92EDE600-2940-4641-8237-BEFA0DFEC161}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockRepository", "Tests\MockRepository.csproj", "{92EDE600-2940-4641-8237-BEFA0DFEC161}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

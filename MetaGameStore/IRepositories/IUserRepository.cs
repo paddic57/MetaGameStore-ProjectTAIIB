@@ -9,20 +9,13 @@ namespace IRepositories
 {
     public interface IUserRepository
     {
-        //authorization
         public bool authorization(string username, string password);
-        //delete
+
         public bool delete(int userId);
-        //getById
         public User getByUserId(int userId);
-        //post
-        public void post(User user);
-        //put
-        public void put(User user);
-
+        public void add(User user);
+        public void update(User user);
         public User getUserByUsername(string username);
-
-        //?get-all?
         
     }
 }

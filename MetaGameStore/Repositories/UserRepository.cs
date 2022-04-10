@@ -44,12 +44,12 @@ namespace Repositories
             return this.context.Users.Where(x => username.Equals(username)).Single();
         }
 
-        public void post(User user)
+        public void add(User user)
         {
             this.context.Users.Add(user);
         }
 
-        public void put(User user)
+        public void update(User user)
         {
             User u = getByUserId(user.Id);
             if(u != null)

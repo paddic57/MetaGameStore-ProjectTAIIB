@@ -18,12 +18,12 @@ namespace Repositories
             this.context = context;
         }
 
-        public void post(Payment payment)
+        public void add(Payment payment)
         {
             this.context.Add(payment);
         }
 
-        public void put(int paymentId, PaymentType paymentType)
+        public void update(int paymentId, PaymentType paymentType)
         {
             Payment p = getPaymentById(paymentId);
             if(p != null)

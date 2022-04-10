@@ -10,8 +10,8 @@ namespace IRepositories
 {
     public interface IPaymentRepository
     {
-        public void post(Payment payment);
-        public void put(int paymentId, PaymentType paymentType);
+        public void add(Payment payment);
+        public void update(int paymentId, PaymentType paymentType);
         public Payment getPaymentById(int paymentId);
     }
 }

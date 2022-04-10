@@ -22,7 +22,7 @@ namespace Repositories
             return this.context.Orders.Where(x => x.User.Id == userId);
         }
 
-        public void post(Order order)
+        public void add(Order order)
         {
             this.context.Orders.Add(order);
         }
