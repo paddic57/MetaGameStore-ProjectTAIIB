@@ -1,4 +1,5 @@
 ﻿using IBusinessLayer;
+using IRepositories;
 using Models;
 using Repositories;
 using System;
@@ -11,8 +12,8 @@ namespace BusinessLayer
 {
     public class BLOrderDetails : IOrderDetails
     {
-        private readonly UnitOfWork unitOfWork;
-        public BLOrderDetails(UnitOfWork unitOfWork)
+        private readonly IUnitOfWork unitOfWork;
+        public BLOrderDetails(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }

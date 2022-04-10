@@ -33,7 +33,9 @@ namespace Repositories
 
         public IEnumerable<OrderDetails> getByIdOrder(int orderId)
         {
-            return this.context.OrderDetails.Where(x => orderId == x.Order.id);
+            var list = new List<OrderDetails>();
+            this.context.OrderDetails.Where(y => y.idOrder == orderId).Select(x => list.Append(x));
+            return list;
         }
 
         public void add(OrderDetails orderDetails)

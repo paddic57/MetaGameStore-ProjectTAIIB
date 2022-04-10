@@ -18,12 +18,12 @@ namespace Repositories
             this.context = context;
         }
 
-        private IOrderDetailsRepository _orderDetails;
-        private IOrderRepository _order;
-        private IPaymentRepository _payment;
-        private IProductGameRepository _productGame;
-        private IProductRepository _product;
-        private IUserRepository _user;
+        public IOrderDetailsRepository _orderDetails;
+        public IOrderRepository _order;
+        public IPaymentRepository _payment;
+        public IProductGameRepository _productGame;
+        public IProductRepository _product;
+        public IUserRepository _user;
 
         public IOrderRepository order
         {
