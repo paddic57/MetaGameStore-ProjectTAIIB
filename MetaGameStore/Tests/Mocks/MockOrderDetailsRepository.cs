@@ -33,10 +33,10 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-        public MockOrderDetailsRepository mockGetByOrderDetailsId(OrderDetails result)
+        public MockOrderDetailsRepository mockGetByOrderDetailsId(IEnumerable<OrderDetails> result)
         {
             Setup(x => x.getByOrderDetailsId(It.IsAny<int>()))
-                .Returns(result);
+                .Returns(result.FirstOrDefault);
             return this;
         }
     }

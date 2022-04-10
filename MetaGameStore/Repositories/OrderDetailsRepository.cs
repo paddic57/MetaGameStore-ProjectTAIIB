@@ -18,7 +18,7 @@ namespace Repositories
         }
         public OrderDetails getByOrderDetailsId(int orderDetailsId)
         {
-            return this.context.OrderDetails.Where(x => x.Id == orderDetailsId).Single();
+            return this.context.OrderDetails.Where(x => x.Id == orderDetailsId).FirstOrDefault();
         }
         public bool delete(int orderDetailsId)
         {

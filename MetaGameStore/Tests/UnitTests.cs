@@ -18,15 +18,34 @@ namespace Tests
         [Fact(DisplayName = "OrderDetails by IdOrderDetails")]
         public void orderDetailsGetByIdOrderDetails_TestValid()
         {
-            var mockOrderDetail = new OrderDetails()
+            var mockOrderDetailsList = new List<OrderDetails>()
             {
-                Id = 1,
-                productCount = 2,
-                productPrice = 3.99,
-                idProduct = 1,
-                idOrder = 1,
+                new OrderDetails()
+                {
+                    Id = 1,
+                    productCount = 2,
+                    productPrice = 3.99,
+                    idProduct = 1,
+                    idOrder = 1,
+                },
+                new OrderDetails()
+                {
+                    Id = 2,
+                    productCount = 2,
+                    productPrice = 5.99,
+                    idProduct = 2,
+                    idOrder = 2,
+                },
+                new OrderDetails()
+                {
+                    Id = 3,
+                    productCount = 1,
+                    productPrice = 10.99,
+                    idProduct = 3,
+                    idOrder = 1,
+                }
             };
-            var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByOrderDetailsId(mockOrderDetail);
+            var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByOrderDetailsId(mockOrderDetailsList);
 
 
             var testUnitOfWork = new UnitOfWorkTests();
