@@ -1,4 +1,4 @@
-﻿using Models.Models;
+﻿using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +9,11 @@ namespace IRepositories
 {
     public interface IOrderDetailsRepository
     {
-        //getByIdOrder
         public IEnumerable<OrderDetails> getByIdOrder(int orderId);
-        //post
-        public void post(OrderDetails orderDetails);
-        //put
-        public void put(int orderDetailsId, int count, int discount);
-        //delete
+        public void add(OrderDetails orderDetails);
+        public void update(int orderDetailsId, int count, int discount);
         public bool delete(int orderDetailsId);
-
         public OrderDetails getByOrderDetailsId(int orderDetailsId);
+        /*public IEnumerable<OrderDetails> getAll();*/
     }
 }

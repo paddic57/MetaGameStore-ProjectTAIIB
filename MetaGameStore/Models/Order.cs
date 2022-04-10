@@ -6,15 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Models
+namespace Models
 {
     public class Order
     {
         [Key]
         public int id { get; set; }
         
-        
-
         public double price { get; set; }
         public DateTime date { get; set; }
         [Required, MaxLength(50)]

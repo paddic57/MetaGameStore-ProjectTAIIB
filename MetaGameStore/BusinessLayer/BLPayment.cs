@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IBusinessLayer;
-using Models.Enums;
-using Models.Models;
+using Enums;
+using Models;
 using Repositories;
 
 namespace BusinessLayer

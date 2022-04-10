@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Enums
+namespace Enums
 {
-    public enum UserType
+    public enum PaymentType
     {
-        Guest = 0,
-        Costumer = 1,
-        Employee = 2,
-        Menager = 3
+        PayPal = 0,
+        Card = 1,
+        Blik = 2,
+        Transfer = 3
     }
 }

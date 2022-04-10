@@ -1,7 +1,6 @@
 ﻿using IRepositories;
 using Models;
-using Models.Enums;
-using Models.Models;
+using Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;

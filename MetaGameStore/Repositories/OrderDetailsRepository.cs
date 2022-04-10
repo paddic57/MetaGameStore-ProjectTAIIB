@@ -1,6 +1,5 @@
 ﻿using IRepositories;
 using Models;
-using Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,12 +36,12 @@ namespace Repositories
             return this.context.OrderDetails.Where(x => orderId == x.Order.id);
         }
 
-        public void post(OrderDetails orderDetails)
+        public void add(OrderDetails orderDetails)
         {
             this.context.Add(orderDetails);
         }
 
-        public void put(int orderDetailsId, int count, int discount)
+        public void update(int orderDetailsId, int count, int discount)
         {
             OrderDetails od = getByOrderDetailsId(orderDetailsId);
             if (od != null)
