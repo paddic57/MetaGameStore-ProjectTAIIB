@@ -17,11 +17,5 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-
-        public MockProductGameRepository verifyGetByProductId(Times times)
-        {
-            Verify(x => x.getByProductId(It.IsAny<int>()), times);
-            return this;
-        }
     }
 }

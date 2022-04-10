@@ -39,31 +39,5 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-
-        public MockOrderDetailsRepository verifyGetByOrderDetailsId(Times times)
-        {
-            Verify(x => x.getByOrderDetailsId(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockOrderDetailsRepository verifyUpdate(Times times)
-        {
-            Verify(x => x.update(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<int>()), times);
-            return this;
-        }
-        public MockOrderDetailsRepository verifyAdd(Times times)
-        {
-            Verify(x => x.add(It.IsAny<OrderDetails>()), times);
-            return this;
-        }
-        public MockOrderDetailsRepository verifyDelete(Times times)
-        {
-            Verify(x => x.delete(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockOrderDetailsRepository verifyGetByIdOrder(Times times)
-        {
-            Verify(x => x.getByIdOrder(It.IsAny<int>()), times);
-            return this;
-        }
     }
 }

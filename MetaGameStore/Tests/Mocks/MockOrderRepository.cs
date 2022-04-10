@@ -23,15 +23,5 @@ namespace MockRepository
             return this;
         }
 
-        public MockOrderRepository verifyAdd(Times times)
-        {
-            Verify(x => x.add(It.IsAny<Order>()), times);
-            return this;
-        }
-        public MockOrderRepository verifyGetUserId(Times times)
-        {
-            Verify(x => x.getByUserID(It.IsAny<int>()), times);
-            return this;
-        }
     }
 }

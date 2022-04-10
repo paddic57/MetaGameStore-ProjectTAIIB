@@ -39,31 +39,5 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-
-        public MockProductRepository verifyAdd(Times times)
-        {
-            Verify(x => x.add(It.IsAny<Product>()), times);
-            return this;
-        }
-        public MockProductRepository verifyUpdate(Times times)
-        {
-            Verify(x => x.update(It.IsAny<Product>()), times);
-            return this;
-        }
-        public MockProductRepository verifyDelete(Times times)
-        {
-            Verify(x => x.delete(It.IsAny<Product>()), times);
-            return this;
-        }
-        public MockProductRepository verifyGetByProductId(Times times)
-        {
-            Verify(x => x.getByProductId(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockProductRepository verifyGetAll(Times times)
-        {
-            Verify(x => x.getAll(),times);
-            return this;
-        }
     }
 }

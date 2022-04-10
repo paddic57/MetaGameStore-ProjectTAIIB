@@ -40,31 +40,5 @@ namespace MockRepository
             return this;
         }
 
-        public MockUserRepository verifyDelete(Times times)
-        {
-            Verify(x => x.delete(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockUserRepository verifyUpdate(Times times)
-        {
-            Verify(x => x.update(It.IsAny<User>()), times);
-            return this;
-        }
-        public MockUserRepository verifyGetUserById(Times times)
-        {
-            Verify(x => x.getByUserId(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockUserRepository verifyGetUserByUsername(Times times)
-        {
-            Verify(x => x.getUserByUsername(It.IsAny<string>()), times);
-            return this;
-        }
-        public MockUserRepository verifyAdd(Times times)
-        {
-            Verify(x => x.add(It.IsAny<User>()), times);
-            return this;
-        }
-
     }
 }

@@ -29,21 +29,5 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
-
-        public MockPaymentRepository verifyGetPaymentById(Times times)
-        {
-            Verify(x => x.getPaymentById(It.IsAny<int>()), times);
-            return this;
-        }
-        public MockPaymentRepository verifyPut(Times times)
-        {
-            Verify(x => x.update(It.IsAny<int>(), It.IsAny<PaymentType>()), times);
-            return this;
-        }
-        public MockPaymentRepository veryfyPost(Times times)
-        {
-            Verify(x => x.add(It.IsAny<Payment>()), times);
-            return this;
-        }
     }
 }
