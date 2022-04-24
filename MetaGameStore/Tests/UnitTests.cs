@@ -15,96 +15,49 @@ namespace Tests
 {
     public class UnitTests
     {
-        [Fact(DisplayName = "OrderDetails by IdOrderDetails")]
-        public void orderDetailsGetByIdOrderDetails_TestValid()
+        
+        [Fact(DisplayName = "OrderDetails post (dummy)")]
+        public void orderDetailsGetById1_TestValid()
         {
-            var mockOrderDetailsList = new List<OrderDetails>()
-            {
-                new OrderDetails()
-                {
-                    Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
-                },
-                new OrderDetails()
-                {
-                    Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 2,
-                },
-                new OrderDetails()
-                {
-                    Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 1,
-                }
-            };
-            var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByOrderDetailsId(mockOrderDetailsList);
+            int id = 1;
 
-
-            var testUnitOfWork = new UnitOfWorkTests();
-
-            testUnitOfWork.orderDetails = mockOrderDetailsRepo.Object;
-            var service = new BLOrderDetails(testUnitOfWork);
-
-
-
-            OrderDetails result = service.getByOrderDetailsId(1);
-
-            Assert.NotNull(result);
-            Assert.Equal(3.99, result.productPrice);
         }
-        [Fact(DisplayName = "OrderDetails by IdOrder")]
-        public void orderDetailsGetByIdOrder_TestValid()
+        [Fact(DisplayName = "OrderDetails post (stub)")]
+        public void orderDetailsAdd1_TestValid()
         {
-            var mockOrderDetailsList = new List<OrderDetails>()
+            var orderDetail = new OrderDetails
             {
-                new OrderDetails()
-                {
-                    Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
-                },
-                new OrderDetails()
-                {
-                    Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 2,
-                },
-                new OrderDetails()
-                {
-                    Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 1,
-                }
+                Id = 1,
+                productCount = 2,
+                productPrice = 3.99,
+                idProduct = 1,
+                idOrder = 1
             };
-            var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByIdOrder(mockOrderDetailsList);
+            IOrderDetailsRepository orderDetails = Mock.Of<IOrderDetailsRepository>();
+            Assert.Equal(true, orderDetails.add(orderDetail)); 
 
+        }
+        [Fact(DisplayName = "OrderDetails add (fakeRepo)")]
+        public void orderDetailsAdd2_TestValid()
+        {
+            var orderDetail = new OrderDetails
+            {
+                Id = 1,
+                productCount = 2,
+                productPrice = 3.99,
+                idProduct = 1,
+                idOrder = 1
+            };
 
-            var testUnitOfWork = new UnitOfWorkTests();
-
-            testUnitOfWork.orderDetails = mockOrderDetailsRepo.Object;
-            var service = new BLOrderDetails(testUnitOfWork);
-
+            var orderDetailsRepository = new FakeOrderDetailsRepository();
+            Assert.Equal(true, orderDetailsRepository.add(orderDetail));
+        }
+        [Fact(DisplayName = "OrderDetails add (spy)")]
+        public void orderDetailsDelete_TestValid()
+        {
             
-
-            List<OrderDetails> result = service.getByIdOrder(1) as List<OrderDetails>;
-
-            Assert.NotNull(result);
-            Assert.Equal(3, result.Count);
         }
-       
+
+
     }
 }

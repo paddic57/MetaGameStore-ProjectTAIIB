@@ -33,14 +33,13 @@ namespace Repositories
 
         public IEnumerable<OrderDetails> getByIdOrder(int orderId)
         {
-            var list = new List<OrderDetails>();
-            this.context.OrderDetails.Where(y => y.idOrder == orderId).Select(x => list.Append(x));
-            return list;
+            return this.context.OrderDetails.Where(y => y.idOrder == orderId).ToList();
         }
 
-        public void add(OrderDetails orderDetails)
+        public bool add(OrderDetails orderDetails)
         {
             this.context.Add(orderDetails);
+            return true;
         }
 
         public void update(int orderDetailsId, int count, int discount)

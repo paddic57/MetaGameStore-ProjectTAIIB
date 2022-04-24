@@ -17,11 +17,10 @@ namespace Models
         public DbSet<ProductGame> ProductsGames { get; set; }
         public DbSet<Payment> Payments { get; set; }
 
-        public MyContext(DbContextOptions<MyContext> options)
-            : base(options)
+        public MyContext(DbContextOptions options) : base(options)
         {
-
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
