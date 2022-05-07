@@ -10,12 +10,12 @@ namespace IRepositories
     public interface IUserRepository
     {
         public bool authorization(string username, string password);
-
-        public bool delete(int userId);
+        public void delete(int userId);
         public User getByUserId(int userId);
         public void add(User user);
         public void update(User user);
         public User getUserByUsername(string username);
+        public IEnumerable<User> getUsers();
         
     }
 }

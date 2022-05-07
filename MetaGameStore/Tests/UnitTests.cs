@@ -19,13 +19,13 @@ namespace Tests
         [Fact(DisplayName = "OrderDetails post (dummy)")]
         public void orderDetailsGetById1_TestValid()
         {
-            int id = 1;
+            
 
         }
         [Fact(DisplayName = "OrderDetails post (stub)")]
         public void orderDetailsAdd1_TestValid()
         {
-            var orderDetail = new OrderDetails
+            /*var orderDetail = new OrderDetails
             {
                 Id = 1,
                 productCount = 2,
@@ -34,7 +34,7 @@ namespace Tests
                 idOrder = 1
             };
             IOrderDetailsRepository orderDetails = Mock.Of<IOrderDetailsRepository>();
-            Assert.Equal(true, orderDetails.add(orderDetail)); 
+            Assert.Equal(true, orderDetails.add(orderDetail)); */
 
         }
         [Fact(DisplayName = "OrderDetails add (fakeRepo)")]
@@ -43,14 +43,14 @@ namespace Tests
             var orderDetail = new OrderDetails
             {
                 Id = 1,
-                productCount = 2,
-                productPrice = 3.99,
-                idProduct = 1,
-                idOrder = 1
+                ProductCount = 2,
+                ProductPrice = 3.99,
+                IdProduct = 1,
+                IdOrder = 1
             };
 
             var orderDetailsRepository = new FakeOrderDetailsRepository();
-            Assert.Equal(true, orderDetailsRepository.add(orderDetail));
+            Assert.True(orderDetailsRepository.add(orderDetail));
         }
         [Fact(DisplayName = "OrderDetails add (spy)")]
         public void orderDetailsDelete_TestValid()

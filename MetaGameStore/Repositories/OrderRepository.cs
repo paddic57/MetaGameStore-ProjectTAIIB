@@ -26,5 +26,9 @@ namespace Repositories
         {
             this.context.Orders.Add(order);
         }
+        public IEnumerable<Order> getOrders()
+        {
+            return this.context.Orders;
+        }
     }
 }

@@ -20,18 +20,16 @@ namespace Repositories
 
         public bool authorization(string username, string password)
         {
-            return this.context.Users.Where(x => (x.username == username) && (x.password == password)).Any();
+            return this.context.Users.Where(x => (x.Username == username) && (x.Password == password)).Any();
         }
 
-        public bool delete(int userId)
+        public void delete(int userId)
         {
             User user = getByUserId(userId);
             if(user != null)
             {
                 this.context.Users.Remove(user);
-                return true;
             }
-            return false;
         }
 
         public User getByUserId(int userId)
@@ -54,12 +52,17 @@ namespace Repositories
             User u = getByUserId(user.Id);
             if(u != null)
             {
-                u.address = user.address;
-                u.country = user.country;
-                u.city = user.city;
-                u.phone_number = user.phone_number;
-                u.postal_code = user.postal_code;
+                u.Address = user.Address;
+                u.Country = user.Country;
+                u.City = user.City;
+                u.PhoneNumber = user.PhoneNumber;
+                u.PostalCode = user.PostalCode;
             }
+        }
+
+        public IEnumerable<User> getUsers()
+        {
+            return this.context.Users;
         }
     }
 }

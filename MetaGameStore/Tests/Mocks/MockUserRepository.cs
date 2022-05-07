@@ -11,10 +11,9 @@ namespace MockRepository
 {
     public class MockUserRepository: Mock<IUserRepository>
     {
-        public MockUserRepository mockDelete(bool result)
+        public MockUserRepository mockDelete()
         {
-            Setup(x => x.delete(It.IsAny<int>()))
-                .Returns(result);
+            Setup(x => x.delete(It.IsAny<int>()));
             return this;
         }
         public MockUserRepository mockGetByUserId(User result)

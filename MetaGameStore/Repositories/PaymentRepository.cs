@@ -28,13 +28,17 @@ namespace Repositories
             Payment p = getPaymentById(paymentId);
             if(p != null)
             {
-                p.paymentType = (int)paymentType;
+                p.PaymentType = (int)paymentType;
             }
         }
         public Payment getPaymentById(int paymentId)
         {
-            return this.context.Payments.Where(x => x.id == paymentId).Single();
+            return this.context.Payments.Where(x => x.Id == paymentId).Single();
         }
 
+        public IEnumerable<Payment> getPayments()
+        {
+            return this.context.Payments;
+        }
     }
 }

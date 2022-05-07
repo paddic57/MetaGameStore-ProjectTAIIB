@@ -1,4 +1,5 @@
 ﻿using IBusinessLayer;
+using IRepositories;
 using Models;
 using Repositories;
 using System;
@@ -11,8 +12,8 @@ namespace BusinessLayer
 {
     public class BLUser : IUser
     {
-        private readonly UnitOfWork unitOfWork;
-        public BLUser(UnitOfWork unitOfWork)
+        private readonly IUnitOfWork unitOfWork;
+        public BLUser(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
@@ -29,13 +30,12 @@ namespace BusinessLayer
             return unitOfWork.user.authorization(username, password);
         }
 
-        public bool delete(int userId)
+        public void delete(int userId)
         {
             if(userId < 0)
                 throw new ArgumentException("Invalid user id");
             unitOfWork.user.delete(userId);
-            unitOfWork.Save();
-            return true;
+            unitOfWork.Save(); 
         }
 
         public User getByUserId(int userId)
@@ -52,22 +52,25 @@ namespace BusinessLayer
             return unitOfWork.user.getUserByUsername(username);
         }
 
-        public bool post(User user)
+        public void add(User user)
         {
             if (user != null)
                 throw new ArgumentException("Invalid user");
             unitOfWork.user.add(user);
             unitOfWork.Save();
-            return true;
         }
 
-        public bool put(User user)
+        public void update(User user)
         {
             if (user != null)
                 throw new ArgumentException("Invalid user");
             unitOfWork.user.update(user);
             unitOfWork.Save();
-            return true;
+        }
+        public IEnumerable<User> getUsers()
+        {
+            return unitOfWork.user.getUsers();
+
         }
     }
 }

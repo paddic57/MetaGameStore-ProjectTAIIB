@@ -27,10 +27,9 @@ namespace MockRepository
             Setup(x => x.update(It.IsAny<int>(), It.IsAny<int>(), It.IsAny<int>()));
             return this;
         }
-        public MockOrderDetailsRepository mockDelete(bool result)
+        public MockOrderDetailsRepository mockDelete()
         {
-            Setup(x => x.delete(It.IsAny<int>()))
-                .Returns(result);
+            Setup(x => x.delete(It.IsAny<int>()));  
             return this;
         }
         public MockOrderDetailsRepository mockGetByOrderDetailsId(OrderDetails result)

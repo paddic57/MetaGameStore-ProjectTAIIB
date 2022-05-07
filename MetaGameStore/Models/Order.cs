@@ -11,27 +11,27 @@ namespace Models
     public class Order
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         
-        public double price { get; set; }
-        public DateTime date { get; set; }
+        public double Price { get; set; }
+        public DateTime Date { get; set; }
         [Required, MaxLength(50)]
-        public string shippingName { get; set; }
+        public string ShippingName { get; set; }
         [Required, MaxLength(50)]
-        public string shippingCity { get; set; }
+        public string ShippingCity { get; set; }
         [Required, MaxLength(50)]
-        public string shippingAddress { get; set; }
+        public string ShippingAddress { get; set; }
         [Required, MaxLength(6)]
-        public string shippingPostalCode { get; set; }
+        public string ShippingPostalCode { get; set; }
         [Required, MaxLength(50)]
-        public string shippingCountry { get; set; }
+        public string ShippingCountry { get; set; }
 
         public User User { get; set; }
 
         ICollection<OrderDetails> OrderDetails { get; set; }
 
         [ForeignKey("Payment")]
-        public int idPayment { get; set; }
+        public int IdPayment { get; set; }
         public Payment Payment { get; set; }
     }
 }

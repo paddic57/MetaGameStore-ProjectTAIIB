@@ -9,8 +9,9 @@ namespace IBusinessLayer
 {
     public interface IOrder
     {
-        public bool post(Order order);
+        public void add(Order order);
         public IEnumerable<Order> getByUserID(int userId);
+        public IEnumerable<Order> getOrders();
 
     }
 }

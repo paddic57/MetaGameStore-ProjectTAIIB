@@ -13,7 +13,7 @@ namespace MockRepository
     {
         public MockProductRepository mockGetAll(IEnumerable<Product> result)
         {
-            Setup(x => x.getAll())
+            Setup(x => x.getProducts())
                 .Returns(result);
             return this;
         }
@@ -33,10 +33,9 @@ namespace MockRepository
             Setup(x => x.update(It.IsAny<Product>()));
             return this;
         }
-        public MockProductRepository mockDelete(bool result)
+        public MockProductRepository mockDelete()
         {
-            Setup(x => x.delete(It.IsAny<Product>()))
-                .Returns(result);
+            Setup(x => x.delete(It.IsAny<Product>()));
             return this;
         }
     }

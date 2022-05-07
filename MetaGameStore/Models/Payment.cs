@@ -11,14 +11,14 @@ namespace Models
     public class Payment
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Range(0, 3)]
-        public int paymentType { get; set; }
-        public int ammount { get; set; }
-        public DateTime date { get; set; }
+        public int PaymentType { get; set; }
+        public int Ammount { get; set; }
+        public DateTime Date { get; set; }
         [Range(0, 3)]
-        public int status { get; set; }
+        public int Status { get; set; }
 
-        public Order order { get; set; }
+        public Order Order { get; set; }
     }
 }

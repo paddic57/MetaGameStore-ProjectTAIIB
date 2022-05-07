@@ -10,9 +10,9 @@ namespace IBusinessLayer
     public interface IOrderDetails
     {
         public IEnumerable<OrderDetails> getByIdOrder(int orderId);
-        public bool post(OrderDetails orderDetails);
-        public bool put(int orderDetailsId, int count, int discount);
-        public bool delete(int orderDetailsId);
+        public void add(OrderDetails orderDetails);
+        public void update(int orderDetailsId, int count, int discount);
+        public void delete(int orderDetailsId);
         public OrderDetails getByOrderDetailsId(int orderDetailsId);
     }
 }

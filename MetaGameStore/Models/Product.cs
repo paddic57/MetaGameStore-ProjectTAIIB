@@ -12,16 +12,16 @@ namespace Models
     {
         [Key]
         [ForeignKey("ProductGame")]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required, MaxLength(50)]
-        public string producer { get; set; }
+        public string Producer { get; set; }
         [Required, MaxLength(50)]
-        public string desription { get; set; }
+        public string Desription { get; set; }
         [Required, MaxLength(50)]
-        public string name { get; set; }
-        public double price { get; set; }
-        public int count { get; set; }
-        public Byte[] photo{ get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public int Count { get; set; }
+        public Byte[] Photo{ get; set; }
 
         public ICollection<OrderDetails> OrderDetails { get; set; }
 

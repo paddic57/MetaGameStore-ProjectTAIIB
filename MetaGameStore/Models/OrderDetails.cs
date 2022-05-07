@@ -12,16 +12,16 @@ namespace Models
     {
         [Key]
         public int Id { get; set; }
-        public double productPrice { get; set; }
-        public int productCount { get; set; }
-        public int productDiscount { get; set; }
+        public double ProductPrice { get; set; }
+        public int ProductCount { get; set; }
+        public int ProductDiscount { get; set; }
 
         [ForeignKey("Order")]
-        public int idOrder { get; set; }
+        public int IdOrder { get; set; }
         public Order Order { get; set; }
 
         [ForeignKey("Product")]
-        public int idProduct { get; set; }
+        public int IdProduct { get; set; }
         public Product Product{ get; set; }
     }
 }

@@ -18,19 +18,24 @@ namespace BusinessLayer
             this.unitOfWork = unitOfWork;
         }
 
+        public void add(Order order)
+        {
+            if (order != null)
+                throw new ArgumentException("Invalid order");
+
+            unitOfWork.order.add(order);
+            unitOfWork.Save();
+        }
+
         public IEnumerable<Order> getByUserID(int userId)
         {
             return unitOfWork.order.getByUserID(userId);
         }
 
-        public bool post(Order order)
+        public IEnumerable<Order> getOrders()
         {
-            if(order != null)
-                throw new ArgumentException("Invalid order");
-
-            unitOfWork.order.add(order);
-            unitOfWork.Save();
-            return true;
+            return unitOfWork.order.getOrders();
         }
+
     }
 }

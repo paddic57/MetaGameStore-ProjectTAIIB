@@ -10,10 +10,10 @@ namespace IRepositories
     public interface IOrderDetailsRepository
     {
         public IEnumerable<OrderDetails> getByIdOrder(int orderId);
-        public bool add(OrderDetails orderDetails);
+        public void add(OrderDetails orderDetails);
         public void update(int orderDetailsId, int count, int discount);
-        public bool delete(int orderDetailsId);
+        public void delete(int orderDetailsId);
         public OrderDetails getByOrderDetailsId(int orderDetailsId);
-        /*public IEnumerable<OrderDetails> getAll();*/
+        
     }
 }

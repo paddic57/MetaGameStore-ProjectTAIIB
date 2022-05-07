@@ -11,5 +11,6 @@ namespace IRepositories
     {
         public void add(Order order);
         public IEnumerable<Order> getByUserID(int userId);
+        public IEnumerable<Order> getOrders();
     }
 }

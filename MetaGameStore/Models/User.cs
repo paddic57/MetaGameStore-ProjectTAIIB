@@ -13,23 +13,23 @@ namespace Models
         [Key]
         public int Id { get; set; }
         [Range (0,4)]
-        public int user_type { get; set; }
+        public int UserType { get; set; }
         [MaxLength(50)]
-        public string username { get; set; }
+        public string Username { get; set; }
         [MaxLength(50)]
-        public string password { get; set; }
+        public string Password { get; set; }
         [MaxLength(50)]
-        public string email { get; set; }
+        public string Email { get; set; }
         [MaxLength (9)]
-        public int phone_number { get; set; }
+        public int PhoneNumber { get; set; }
         [MaxLength(50)]
-        public string city { get; set; }
+        public string City { get; set; }
         [MaxLength(6)]
-        public string postal_code { get; set; }
+        public string PostalCode { get; set; }
         [MaxLength(50)]
-        public string address { get; set; }
+        public string Address { get; set; }
         [MaxLength(50)]
-        public string country { get; set; }
+        public string Country { get; set; }
 
         public ICollection<Order> Orders { get; set; }
     }

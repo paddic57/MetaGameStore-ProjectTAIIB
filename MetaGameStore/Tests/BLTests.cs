@@ -18,10 +18,10 @@ namespace Tests
             var mockOrderDetails = new OrderDetails()
             {
                 Id = 1,
-                productCount = 2,
-                productPrice = 3.99,
-                idProduct = 1,
-                idOrder = 1,
+                ProductCount = 2,
+                ProductPrice = 3.99,
+                IdProduct = 1,
+                IdOrder = 1,
             };
             
             var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByOrderDetailsId(mockOrderDetails);
@@ -37,7 +37,7 @@ namespace Tests
             OrderDetails result = service.getByOrderDetailsId(1);
 
             Assert.NotNull(result);
-            Assert.Equal(3.99, result.productPrice);
+            Assert.Equal(3.99, result.ProductPrice);
         }
         [Fact(DisplayName = "OrderDetails by IdOrder")]
         public void orderDetailsGetByIdOrder_TestValid()
@@ -47,34 +47,34 @@ namespace Tests
                 new OrderDetails()
                 {
                     Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
+                    ProductCount = 2,
+                    ProductPrice = 3.99,
+                    IdProduct = 1,
+                    IdOrder = 1,
                 },
                 new OrderDetails()
                 {
                     Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 1,
+                    ProductCount = 2,
+                    ProductPrice = 5.99,
+                    IdProduct = 2,
+                    IdOrder = 1,
                 },
                 new OrderDetails()
                 {
                     Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 2,
+                    ProductCount = 1,
+                    ProductPrice = 10.99,
+                    IdProduct = 3,
+                    IdOrder = 2,
                 },
                 new OrderDetails()
                 {
                     Id = 4,
-                    productCount = 3,
-                    productPrice = 12.99,
-                    idProduct = 1,
-                    idOrder = 1,
+                    ProductCount = 3,
+                    ProductPrice = 12.99,
+                    IdProduct = 1,
+                    IdOrder = 1,
                 }
             };
             var mockOrderDetailsRepo = new MockOrderDetailsRepository().mockGetByIdOrder(mockOrderDetailsList);

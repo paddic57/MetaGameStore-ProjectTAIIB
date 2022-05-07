@@ -20,26 +20,23 @@ namespace Repositories
         {
             return this.context.OrderDetails.Where(x => x.Id == orderDetailsId).FirstOrDefault();
         }
-        public bool delete(int orderDetailsId)
+        public void delete(int orderDetailsId)
         {
             OrderDetails od = getByOrderDetailsId(orderDetailsId);
             if (od != null)
             {
                 this.context.Remove(od);
-                return true;
             }
-            return false;
         }
 
         public IEnumerable<OrderDetails> getByIdOrder(int orderId)
         {
-            return this.context.OrderDetails.Where(y => y.idOrder == orderId).ToList();
+            return this.context.OrderDetails.Where(y => y.IdOrder == orderId).ToList();
         }
 
-        public bool add(OrderDetails orderDetails)
+        public void add(OrderDetails orderDetails)
         {
             this.context.Add(orderDetails);
-            return true;
         }
 
         public void update(int orderDetailsId, int count, int discount)
@@ -47,8 +44,8 @@ namespace Repositories
             OrderDetails od = getByOrderDetailsId(orderDetailsId);
             if (od != null)
             {
-                od.productCount = count;
-                od.productDiscount = discount;
+                od.ProductCount = count;
+                od.ProductDiscount = discount;
             }
         }
     }

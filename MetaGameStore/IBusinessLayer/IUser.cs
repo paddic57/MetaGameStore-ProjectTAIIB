@@ -10,10 +10,11 @@ namespace IBusinessLayer
     public interface IUser
     {
         public bool authorization(string username, string password);
-        public bool delete(int userId);
+        public void delete(int userId);
         public User getByUserId(int userId);
-        public bool post(User user);
-        public bool put(User user);
+        public void add(User user);
+        public void update(User user);
         public User getUserByUsername(string username);
+        public IEnumerable<User> getUsers();
     }
 }

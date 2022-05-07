@@ -18,13 +18,12 @@ namespace BusinessLayer
             this.unitOfWork = unitOfWork;
         }
 
-        public bool delete(int orderDetailsId)
+        public void delete(int orderDetailsId)
         {
             if (orderDetailsId < 0)
                 throw new ArgumentException("Invalid order details id");
             unitOfWork.orderDetails.delete(orderDetailsId);
             unitOfWork.Save();
-            return true;
         }
 
         public IEnumerable<OrderDetails> getByIdOrder(int orderId)
@@ -37,7 +36,7 @@ namespace BusinessLayer
             return unitOfWork.orderDetails.getByOrderDetailsId(orderDetailsId);
         }
 
-        public bool post(OrderDetails orderDetails)
+        public void add(OrderDetails orderDetails)
         {
             if (orderDetails != null)
             {
@@ -45,10 +44,9 @@ namespace BusinessLayer
             }
             unitOfWork.orderDetails.add(orderDetails);
             unitOfWork.Save();
-            return true;
         }
 
-        public bool put(int orderDetailsId, int count, int discount)
+        public void update(int orderDetailsId, int count, int discount)
         {
             if (orderDetailsId < 0)
                 throw new ArgumentException("Invalid order details id");
@@ -58,7 +56,6 @@ namespace BusinessLayer
                 throw new ArgumentException("Invalid discount");
             unitOfWork.orderDetails.update(orderDetailsId, count, discount);
             unitOfWork.Save();
-            return true;
         }
     }
 }

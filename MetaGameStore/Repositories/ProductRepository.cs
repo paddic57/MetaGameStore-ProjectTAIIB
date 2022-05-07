@@ -17,14 +17,14 @@ namespace Repositories
             this.context = context;
         }
 
-        public IEnumerable<Product> getAll()
+        public IEnumerable<Product> getProducts()
         {
             return this.context.Products;
         }
 
         public Product getByProductId(int productId)
         {
-            return this.context.Products.Where(x => x.id == productId).Single();
+            return this.context.Products.Where(x => x.Id == productId).Single();
         }
 
         public void add(Product product)
@@ -34,25 +34,23 @@ namespace Repositories
 
         public void update(Product product)
         {
-            Product p = getByProductId(product.id);
+            Product p = getByProductId(product.Id);
             if (p != null)
             {
-                p.price = product.price;
-                p.photo = product.photo;
-                p.producer = product.producer;
-                p.count = product.count;
-                p.name = product.name;
-                p.desription = product.desription;
+                p.Price = product.Price;
+                p.Photo = product.Photo;
+                p.Producer = product.Producer;
+                p.Count = product.Count;
+                p.Name = product.Name;
+                p.Desription = product.Desription;
             }
         }
-        public bool delete(Product product)
+        public void delete(Product product)
         {
             if (product != null)
             {
                 this.context.Products.Remove(product);
-                return true;
             }
-            return false;
         }
     }
 }

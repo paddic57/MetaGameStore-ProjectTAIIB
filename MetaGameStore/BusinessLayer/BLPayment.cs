@@ -7,13 +7,14 @@ using IBusinessLayer;
 using Enums;
 using Models;
 using Repositories;
+using IRepositories;
 
 namespace BusinessLayer
 {
     public class BLPayment : IPayment
     {
-        private readonly UnitOfWork unitOfWork;
-        public BLPayment(UnitOfWork unitOfWork)
+        private readonly IUnitOfWork unitOfWork;
+        public BLPayment(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
@@ -26,17 +27,16 @@ namespace BusinessLayer
 
         }
 
-        public bool post(Payment payment)
+        public void add(Payment payment)
         {
             if (payment != null)
                 throw new ArgumentException("Invalid payment");
 
             unitOfWork.payment.add(payment);
             unitOfWork.Save();
-            return true;
         }
 
-        public bool put(int paymentId, PaymentType paymentType)
+        public void update(int paymentId, PaymentType paymentType)
         {
             if (paymentId < 0)
                 throw new ArgumentException("Invalid payment id");
@@ -45,7 +45,11 @@ namespace BusinessLayer
 
             unitOfWork.payment.update(paymentId, paymentType);
             unitOfWork.Save();
-            return true;
+        }
+
+        public IEnumerable<Payment> getPayments()
+        {
+            return unitOfWork.payment.getPayments();
         }
     }
 }

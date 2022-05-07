@@ -13,12 +13,12 @@ namespace Models
         [Key]
         public int Id { get; set; }
         [Range(0,5)]
-        public int game_type { get; set; }
-        public DateTime premiere { get; set; }
-        public string pegi { get; set; }
+        public int GameType { get; set; }
+        public DateTime Premiere { get; set; }
+        public string Pegi { get; set; }
         [Range(0, 4)]
-        public int platform { get; set; }
-        public string game_mode { get; set; }
+        public int Platform { get; set; }
+        public string GameMode { get; set; }
 
         public Product Product { get; set; }    
 

@@ -9,9 +9,9 @@ namespace IBusinessLayer
 {
     public interface IProduct
     {
-        public IEnumerable<Product> getAll();
+        public IEnumerable<Product> getProducts();
         public Product getByProductId(int productId);
-        public bool post(Product product);
-        public bool put(Product product);
+        public void add(Product product);
+        public void update(Product product);
     }
 }

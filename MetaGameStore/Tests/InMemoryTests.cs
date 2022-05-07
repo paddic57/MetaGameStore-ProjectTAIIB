@@ -29,16 +29,13 @@ namespace Tests
             var orderDetail = new OrderDetails
             {
                 Id = 1,
-                productCount = 2,
-                productPrice = 3.99,
-                idProduct = 1,
-                idOrder = 1
+                ProductCount = 2,
+                ProductPrice = 3.99,
+                IdProduct = 1,
+                IdOrder = 1
             };
 
-            bool result = con.add(orderDetail);
-
-            Assert.True(result);
-
+            con.add(orderDetail);
         }
 
         [Fact(DisplayName = "OrderDetails get by id order  (in memory)")]
@@ -52,26 +49,26 @@ namespace Tests
                 new OrderDetails()
                 {
                     Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
+                    ProductCount = 2,
+                    ProductPrice = 3.99,
+                    IdProduct = 1,
+                    IdOrder = 1,
                 },
                 new OrderDetails()
                 {
                     Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 2,
+                    ProductCount = 2,
+                    ProductPrice = 5.99,
+                    IdProduct = 2,
+                    IdOrder = 2,
                 },
                 new OrderDetails()
                 {
                     Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 1,
+                    ProductCount = 1,
+                    ProductPrice = 10.99,
+                    IdProduct = 3,
+                    IdOrder = 1,
                 }
             };
             context.OrderDetails.AddRange(orderDetailsList);
@@ -94,26 +91,26 @@ namespace Tests
                 new OrderDetails()
                 {
                     Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
+                    ProductCount = 2,
+                    ProductPrice = 3.99,
+                    IdProduct = 1,
+                    IdOrder = 1,
                 },
                 new OrderDetails()
                 {
                     Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 2,
+                    ProductCount = 2,
+                    ProductPrice = 5.99,
+                    IdProduct = 2,
+                    IdOrder = 2,
                 },
                 new OrderDetails()
                 {
                     Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 1,
+                    ProductCount = 1,
+                    ProductPrice = 10.99,
+                    IdProduct = 3,
+                    IdOrder = 1,
                 }
             };
             context.OrderDetails.AddRange(orderDetailsList);
@@ -121,7 +118,7 @@ namespace Tests
 
             OrderDetails result = con.getByOrderDetailsId(2);
 
-            Assert.Equal(5.99, result.productPrice);
+            Assert.Equal(5.99, result.ProductPrice);
 
         }
 
@@ -135,34 +132,32 @@ namespace Tests
                 new OrderDetails()
                 {
                     Id = 1,
-                    productCount = 2,
-                    productPrice = 3.99,
-                    idProduct = 1,
-                    idOrder = 1,
+                    ProductCount = 2,
+                    ProductPrice = 3.99,
+                    IdProduct = 1,
+                    IdOrder = 1,
                 },
                 new OrderDetails()
                 {
                     Id = 2,
-                    productCount = 2,
-                    productPrice = 5.99,
-                    idProduct = 2,
-                    idOrder = 2,
+                    ProductCount = 2,
+                    ProductPrice = 5.99,
+                    IdProduct = 2,
+                    IdOrder = 2,
                 },
                 new OrderDetails()
                 {
                     Id = 3,
-                    productCount = 1,
-                    productPrice = 10.99,
-                    idProduct = 3,
-                    idOrder = 1,
+                    ProductCount = 1,
+                    ProductPrice = 10.99,
+                    IdProduct = 3,
+                    IdOrder = 1,
                 }
             };
             context.OrderDetails.AddRange(orderDetailsList);
             context.SaveChanges();
 
-            bool result = con.delete(1);
-
-            Assert.True(result);
+            con.delete(1);
 
         }
     }

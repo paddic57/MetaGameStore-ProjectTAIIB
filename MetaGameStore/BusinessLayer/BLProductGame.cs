@@ -1,4 +1,5 @@
 ﻿using IBusinessLayer;
+using IRepositories;
 using Models;
 using Repositories;
 using System;
@@ -11,8 +12,8 @@ namespace BusinessLayer
 {
     public class BLProductGame : IProductGame
     {
-        private readonly UnitOfWork unitOfWork;
-        public BLProductGame(UnitOfWork unitOfWork)
+        private readonly IUnitOfWork unitOfWork;
+        public BLProductGame(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }

@@ -13,5 +13,6 @@ namespace IRepositories
         public void add(Payment payment);
         public void update(int paymentId, PaymentType paymentType);
         public Payment getPaymentById(int paymentId);
+        public IEnumerable<Payment> getPayments();
     }
 }
