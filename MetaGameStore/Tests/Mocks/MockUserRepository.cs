@@ -38,6 +38,11 @@ namespace MockRepository
                 .Returns(result);
             return this;
         }
+        public MockUserRepository mockGetUsers(IEnumerable<User> result)
+        {
+            Setup(x => x.getUsers());
+            return this;
+        }
 
     }
 }

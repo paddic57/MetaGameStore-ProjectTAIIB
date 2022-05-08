@@ -20,7 +20,6 @@ namespace Models
         public string Password { get; set; }
         [MaxLength(50)]
         public string Email { get; set; }
-        [MaxLength (9)]
         public int PhoneNumber { get; set; }
         [MaxLength(50)]
         public string City { get; set; }

@@ -34,12 +34,12 @@ namespace Repositories
 
         public User getByUserId(int userId)
         {
-            return this.context.Users.Where(x => x.Id == userId).Single();
+            return this.context.Users.Where(x => x.Id == userId).FirstOrDefault();
         }
 
         public User getUserByUsername(string username)
         {
-            return this.context.Users.Where(x => username.Equals(username)).Single();
+            return this.context.Users.Where(x => username.Equals(username)).FirstOrDefault();
         }
 
         public void add(User user)

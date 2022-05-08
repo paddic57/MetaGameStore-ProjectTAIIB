@@ -26,6 +26,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
     <ProjectReference Include="..\IRepositories\IRepositories.csproj" />
+    <ProjectReference Include="..\MetaGameStore\MetaGameStore.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\Repositories\Repositories.csproj" />
   </ItemGroup>
